@@ -74,7 +74,7 @@ footer {
     border-style: dotted;
     border-radius: 
     height: 13px;
-    padding
+    padding: 
     position: relative;
 }
 
@@ -86,11 +86,12 @@ footer {
 }
 
 .questcard img {
- width: 4rem;
+ width: 2rem;
  position: absolute;
  display: block;
- top: rem;
- right: -.10rem;
+ top: 8rem;
+ right: -.8rem;
+ left: 7rem;
  
 
 }
