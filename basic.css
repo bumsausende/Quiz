@@ -1,0 +1,7 @@
+:root {
+  --primary-color: chartreuse;
+  --font-family: "Courier New";
+}
+header {
+  background-color: var(--primary-color);
+}
