@@ -1,3 +1,8 @@
+
+
+
+
+
 header {
 display: flex;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -8,6 +13,8 @@ display: flex;
   top: 0;
   right: 0;
   display: flex;
+  flex-direction: row-reverse;
+  justify-content:
   
 
 }
@@ -15,7 +22,9 @@ display: flex;
     header {
       width: 100%; 
     }
-
+#top {
+    
+}
   .box{
     display: inline-block;
     height: 200px;
@@ -32,7 +41,10 @@ display: flex;
     }
   body {
       display: block;
-      margin: 20px;
+      margin: 50px;
+      padding: 1px;
+      border: 50px;
+
     }  
 
 footer {
@@ -60,6 +72,7 @@ footer {
     border-radius: 
     height: 13px;
     padding
+    position: relative;
 }
 
 .questcard button {
@@ -68,12 +81,20 @@ footer {
     margin: 
 
 }
+
+.questcard img {
+ width: 24pt;
+ position: absolute;
+ display: block;
+
+}
 button {
 
 }
 .navbar a {
     display: flex;
     flex-direction: row;
+    text-align: center;
 
     
     float: left;
