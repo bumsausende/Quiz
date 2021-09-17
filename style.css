@@ -60,13 +60,15 @@ footer {
     position: relative;
     flex-wrap: wrap;
     border: 9px solid chartreuse;
+    border-radius: 20px 50px;
     background-color: rgba(245, 229, 220, 0.61);
 }
 .bookmark-tag {
     position: absolute;
     display: block;
-    top: 1rem;
-    left: 13em;
+    top: 0.5rem;
+    left: 17em;
+    background-color: #ee088e;
  
 }
 .questcard {
@@ -88,6 +90,8 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between
+  
+  
 }
 .navbar {
     display: flex;
@@ -95,9 +99,8 @@ a {
     justify-content: space-around;
     float: left;
     padding: 12px;
-    color: rgb(19, 18, 18);
     text-decoration: none;
-    font-size: 24px;
+    font-size: 42px;
     flex-grow: 1;
   }
 
@@ -120,12 +123,31 @@ a {
 .button {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 2rem;
     height: 6em;
     width: 15em;
     border: 6px solid chartreuse;
-    animation: step-start reverse 300ms;
+    border-radius: 30px;
+    font-family: 'Courier New', Courier, monospace;
    
+}
+
+.question-tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+
+
+}
+.question-tag-item {
+border: 3px solid white;
+padding: 0.7em;
+margin: 0.3em;
+background-color: chartreuse;
+
+
 }
 /*------------------TEST---------------*/m
 
@@ -194,3 +216,20 @@ a {
   } .bookmark-tag:hover {
       animation-play-state: paused;
   }
+
+.profile-pic {
+  border-radius: 50%;
+
+}
+.profile-title {
+  border: 20px solid chartreuse;
+  border-radius: 20px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.profile-flex-container {
+  display: flexbox;
+  
+}
+/*unsure about flexbox*/
