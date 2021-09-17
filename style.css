@@ -104,7 +104,9 @@ a {
   .navbar a:hover {
     background-color: #ee088e;
   }
-  
+  .navbar a:visited {
+    background-color: #ee088e;
+  }
   .active {
     background-color: #ee088e;
   }
