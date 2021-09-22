@@ -21,7 +21,7 @@
   <body>
     <header id="top">...quizappppppp</header>
     <main>
-      <p>testschrifti</p>
+      <section class="page current" id="home">
       <section class="questcard-container">
       <div class="questcard">
         <img class="bookmark-tag" src="image/outline_bookmarks_black_24dp.png">
@@ -54,15 +54,73 @@
         <button> show </button>
  
     </section>
+    </section>
        
+    <section class="page" id="bookmark"></section>
+    <section class="page" id="create">
+      <form action="">
+        <section>
+           <label for="question-create">put your own question in here</label>
+    
+    <textarea id="question-create" name="question-create" rows="10" cols="50">
+     no one knows everything
+    </textarea>
+    </section>
+    <section>
+        <label for="question-answer">if you know the answer</label>
+    
+    <textarea id="question-answer" name="question-answer" rows="10" cols="50">
+    but at one time you will
+    </textarea>
+    </section>
+    
+    <section>
+        <label for="question-tags">have some tags and hashs? </label>
+    
+    <textarea id="question-tags" name="question-tag" rows="5" cols="50">
+    it gets in here
+    </textarea> 
+    </section>
+    
+    <section>
+        <button class="button-submit"
+        type="button">
+    LODGE IT
+    </button>
+    
+    </section>
+    </form> </section> 
+
+    <section class="page" id="profile">
+      <section class="profile-flex-container">
+      <h1 class="profile-title"> HI!
+          <img src="image/IMG_20210917_085359.jpg" alt="me" class="profile-pic" width="200" height="200">
+
+      </h1>    
+      <div class="about-me">
+          <div> i am bums</div>
+          <div> like unicorns and quizzes</div>
+          <div> has answered 62536 questions</div> 
+      </div> 
+
+        <div class="profile-tags" >
+          <section class="profile-tag-item">#very smart</section>
+          <section class="profile-tag-item">#themebased</section>
+          <section class="profile-tag-item">#9 out of 10 cats</section>
+          <section class="profile-tag-item">#still class of unicorns</section>
+        </section>
+      <button class="logout-button" type="button"> get out</button>
+      </section>
+      
     </main>
     <footer>
       <nav class="navbar">
-            <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i></a> 
-            <a href="bookmark.html"><i class="fa fa-fw fa-bookmark"></i></a> 
-            <a href="create.html"><i class="fa fa-fw fa-book"></i></a> 
-            <a href="profile.html"><i class="fa fa-fw fa-user"></i></a>  
+            <a class="active link-home" href="#home"><i class="fa fa-fw fa-home"></i></a> 
+            <a class="link-bookmark" href="#bookmark"><i class="fa fa-fw fa-bookmark"></i></a> 
+            <a class="link-create" href="#create"><i class="fa fa-fw fa-book"></i></a> 
+            <a class="link-profile" href="#profile"><i class="fa fa-fw fa-user"></i></a>  
       </nav>
     </footer>
+    <script src="javascript.js"></script>
   </body>
 </html>

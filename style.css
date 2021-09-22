@@ -233,3 +233,8 @@ background-color: chartreuse;
   
 }
 /*unsure about flexbox*/
+.page
+{display: none;}
+.page.current{
+  display:block;
+}
