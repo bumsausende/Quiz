@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>quizappppppp</title>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link
@@ -24,12 +23,13 @@
       <section class="page current" id="home">
       <section class="questcard-container">
       <div class="questcard">
-        <img class="bookmark-tag" src="image/outline_bookmarks_black_24dp.png">
+        <div class="bookmarkIcon"></div>
+        
         <h2>QUESTION</h2>
         <p>what is going on here?</p>
         <hr>
-        <button class="button"> show me some answer</button>
-
+        <button class="buttonAnswer"> show me some answer</button>
+        <p> i fckg dont know hehe</p>
 
     <div class="question-tags" >
       <section class="question-tag-item">blubb</section>
@@ -60,36 +60,38 @@
     <section class="page" id="create">
       <form action="">
         <section>
-           <label for="question-create">put your own question in here</label>
+           <label for="questionCreateID">put your own question in here</label>
     
-    <textarea id="question-create" name="question-create" rows="10" cols="50">
+    <textarea id="questionCreateID" name="questionCreate" rows="10" cols="50">
      no one knows everything
     </textarea>
     </section>
     <section>
-        <label for="question-answer">if you know the answer</label>
+        <label for="questionAnswerID">if you know the answer</label>
     
-    <textarea id="question-answer" name="question-answer" rows="10" cols="50">
+    <textarea id="questionAnswerID" name="questionAnswer" rows="10" cols="50">
     but at one time you will
     </textarea>
     </section>
     
     <section>
-        <label for="question-tags">have some tags and hashs? </label>
+        <label for="questionTagsID">have some tags and hashs? </label>
     
-    <textarea id="question-tags" name="question-tag" rows="5" cols="50">
+    <textarea id="questionTagsID" name="questionTags" rows="5" cols="50">
     it gets in here
     </textarea> 
     </section>
     
     <section>
-        <button class="button-submit"
-        type="button">
+        <button class="submit"
+        type="submit">
     LODGE IT
     </button>
     
     </section>
-    </form> </section> 
+    </form> 
+  
+  </section> 
 
     <section class="page" id="profile">
       <section class="profile-flex-container">

@@ -1,12 +1,10 @@
-
 :root {
-    --font-family: 'Courier New';
+  --font-family: "Courier New";
 }
-
 
 header {
   display: flex;
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 
   font-weight: 600;
   font-size: 34pt;
@@ -17,110 +15,102 @@ header {
   flex-direction: row-reverse;
   justify-content: center;
   z-index: 1;
-  
 }
 @media screen and (max-width: 1900px) {
-    header {
-      width: 100%; 
-    }
-
-  
-    
+  header {
+    width: 100%;
   }
-  @media screen and (max-width: 1900px){
-    .box{
-      width: 40%;
-      background-color: #3b3a38;
-    }
-  body {
-      display: block;
-      margin-top: 30vh;
-      margin-bottom: 30vh;
-      padding:0;
-      border: 0x;
-      font-family: var(--font-family);
-      background-image: linear-gradient(to bottom right, #ee088e, chartreuse);
-
-    }  
+}
+@media screen and (max-width: 1900px) {
+  .box {
+    width: 40%;
+    background-color: #3b3a38;
+  }
+}
+body {
+  display: block;
+  margin-top: 30vh;
+  margin-bottom: 30vh;
+  padding: 0;
+  border: 0x;
+  font-family: var(--font-family);
+  background-image: linear-gradient(to bottom right, #ee088e, chartreuse);
+}
 
 footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 100vw;
-   
-    box-shadow: 0 0 3px;
-    background-color: chartreuse;
-    display: flex;
-    flex-wrap: wrap;}
-    
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+
+  box-shadow: 0 0 3px;
+  background-color: chartreuse;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .questcard-container {
-    padding: 30px 30px 20px;
-    margin: 30px 30px 30px;
-    position: relative;
-    flex-wrap: wrap;
-    border: 9px solid chartreuse;
-    border-radius: 20px 50px;
-    background-color: rgba(245, 229, 220, 0.61);
+  padding: 30px 30px 20px;
+  margin: 30px 30px 30px;
+  position: relative;
+  flex-wrap: wrap;
+  border: 9px solid chartreuse;
+  border-radius: 20px 50px;
+  background-color: rgba(245, 229, 220, 0.61);
 }
 .bookmark-tag {
-    position: absolute;
-    display: block;
-    top: 0.5rem;
-    left: 17em;
-    background-color: #ee088e;
- 
+  position: absolute;
+  display: block;
+  top: 0.5rem;
+  left: 17em;
+  background-color: #ee088e;
 }
 .questcard {
-    display:flex;
-    flex-direction: column;
-    padding: 
-    position: relative;
-    
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 .taglist {
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 a {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between
-  
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    float: left;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 42px;
-    flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  float: left;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 42px;
+  flex-grow: 1;
+}
+
+.navbar a:hover {
+  background-color: #ee088e;
+}
+.navbar a:visited {
+  background-color: #ee088e;
+}
+.active {
+  background-color: #ee088e;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
   }
 
-  .navbar a:hover {
-    background-color: #ee088e;
-  }
-  .navbar a:visited {
-    background-color: #ee088e;
-  }
-  .active {
-    background-color: #ee088e;
-  }
-  
-  @media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
-    }
-
-.button {
+  .buttonAnswer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,42 +119,55 @@ a {
     width: 15em;
     border: 6px solid chartreuse;
     border-radius: 30px;
-    font-family: 'Courier New', Courier, monospace;
-   
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .question-tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .question-tag-item {
+    border: 3px solid white;
+    padding: 0.7em;
+    margin: 0.3em;
+    background-color: chartreuse;
+  }
 }
-
-.question-tags {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
-
-
+/*------------------TEST---------------*/
+m .day {
+  background: #eee;
+  color: black;
 }
-.question-tag-item {
-border: 3px solid white;
-padding: 0.7em;
-margin: 0.3em;
-background-color: chartreuse;
-
-
+.night {
+  background: #333;
+  color: white;
 }
-/*------------------TEST---------------*/m
-
-    .day   { background: #eee; color: black; }
-.night { background: #333; color: white; }
 
 @media (prefers-color-scheme: dark) {
-  .day.dark-scheme   { background:  #333; color: white; }
-  .night.dark-scheme { background: black; color:  #ddd; }
+  .day.dark-scheme {
+    background: #333;
+    color: white;
+  }
+  .night.dark-scheme {
+    background: black;
+    color: #ddd;
+  }
 }
 
 @media (prefers-color-scheme: light) {
-  .day.light-scheme   { background: white; color:  #555; }
-  .night.light-scheme { background:  #eee; color: black; }
+  .day.light-scheme {
+    background: white;
+    color: #555;
+  }
+  .night.light-scheme {
+    background: #eee;
+    color: black;
+  }
 }
 
-.day, .night {
+.day,
+.night {
   display: inline-block;
   padding: 1em;
   width: 7em;
@@ -173,54 +176,55 @@ background-color: chartreuse;
 }
 /*--------TEST--------------------*/
 @media (prefers-color-scheme: dark) {
-    .footericon (background: var(--iconURL-dark);)
+  .footericon {
+    background: var(--iconURL-dark);
+  }
 }
-    
+
 @keyframes bounce {
-    from,
-    20%,
-    53%,
-    to {
-      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      transform: translate3d(0, 0, 0);
-    }
-  
-    40%,
-    43% {
-      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      transform: translate3d(0, -30px, 0) scaleY(1.1);
-    }
-  
-    70% {
-      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      transform: translate3d(0, -15px, 0) scaleY(1.05);
-    }
-  
-    80% {
-      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      transform: translate3d(0, 0, 0) scaleY(0.95);
-    }
-  
-    90% {
-      transform: translate3d(0, -4px, 0) scaleY(1.02);
-    }
+  from,
+  20%,
+  53%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
   }
-  
-  .bookmark-tag {
-    animation-name: bounce;
-    transform-origin: center bottom;
-    animation-duration: 300ms;
-    animation-iteration-count: infinite;
-    
-   
-  } .bookmark-tag:hover {
-      animation-play-state: paused;
+
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0) scaleY(1.1);
   }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0) scaleY(1.05);
+  }
+
+  80% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0) scaleY(0.95);
+  }
+
+  90% {
+    transform: translate3d(0, -4px, 0) scaleY(1.02);
+  }
+}
+
+.bookmarkIcon {
+  animation-name: bounce;
+  transform-origin: center bottom;
+  animation-duration: 300ms;
+  animation-iteration-count: infinite;
+}
+.bookmarkIcon:hover {
+  animation-play-state: paused;
+}
 
 .profile-pic {
   border-radius: 50%;
-
 }
+
 .profile-title {
   border: 20px solid chartreuse;
   border-radius: 20px 50px;
@@ -230,11 +234,26 @@ background-color: chartreuse;
 }
 .profile-flex-container {
   display: flexbox;
-  
 }
 /*unsure about flexbox*/
-.page
-{display: none;}
-.page.current{
-  display:block;
+.page {
+  display: none;
+}
+.current {
+  display: block;
+}
+
+.bookmarkIcon {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+  background: url(./image/bookmark_border_black_24dp.svg);
+  background-position: center;
+}
+.bookmarkedIcon {
+  background: none;
+  background: url(./image/bookmark_black_24dp.svg);
+  background-position: center;
 }
