@@ -46,6 +46,7 @@ unmarkedBookmarkList.forEach((bookmark)=>{
         bookmark.classList.toggle("bookmarkedIcon");
     })
 })
+/*
  const buttonAnswerList = document.querySelectorAll(".buttonAnswer");
   buttonAnswerList.forEach((buttonAnswer)=>{
     const answerButtonShow = answerButton.querySelector(".answerbutton");
@@ -53,4 +54,53 @@ unmarkedBookmarkList.forEach((bookmark)=>{
     answerButton.addEventListener ("click", ()=>{
         answer.classList.toggle("show");
     });
-  });
+  });*/
+
+
+  const questions = [
+      { question: "What the Heck?", answer:"Yes!", tags:"???,!!!,???",},
+      { question: "What the Heck?", answer:"Yes!", tags:"???,!!!,???",},
+      { question: "What the Heck?", answer:"Yes!", tags:"???,!!!,???",},
+    ];
+
+const createQuestionHtml = (questions) => {
+    let html ="";
+    
+    questions.forEach((questionComplete)=>{
+    html= html + `<div class="questcard">
+    <div>QUESTION: ${questionComplete.question}</div>
+    <div>ANSWER: ${questionComplete.answer}</div>
+    <div>TAGS: ${questionComplete.tags}</div>
+    </div>`;
+});
+console.log("createdHTML", html);
+return html;
+}
+
+console.log(createQuestionHtml(questions));
+
+
+
+
+const renderQuestions = () => {
+
+    const questionsHtml = createQuestionHtml(questions);
+    const questionsContainer = document.querySelector("#home");
+    questionsContainer.innerHTML = questionsHtml;
+};
+renderQuestions();
+const formular= document.querySelector("form");
+formular.addEventListener("submit", (event) => {
+    questions.push({
+        question: formular.elements.questionCreate.value,
+        answer: formular.elements.questionAnswer.value,
+        tags: formular.elements.questionTags.value,
+    });
+renderQuestions();
+console.log(questions);
+event.preventDefault();
+});
+
+/*
+1. TAGS zerschnippeln*/
+
